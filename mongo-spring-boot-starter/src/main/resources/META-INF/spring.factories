@@ -1,0 +1,4 @@
+# Auto Configure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+me.lubin.mongo.starter.config.NormalMongoConfig,\
+me.lubin.mongo.starter.config.ProdMongoConfig

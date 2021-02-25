@@ -14,6 +14,7 @@
         <module>generator-spring-boot-starter</module>
         <module>mysql-spring-boot-starter</module>
         <module>mybatis-spring-boot-starter</module>
+        <module>mongo-spring-boot-starter</module>
     </modules>
 
 
