@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>generator-spring-boot-starter</artifactId>
+    <artifactId>web-template</artifactId>
     <packaging>jar</packaging>
 
     <properties>
@@ -18,8 +18,24 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <groupId>me.lubin</groupId>
+            <artifactId>web-spring-boot-starter</artifactId>
+            <version>${version}</version>
+        </dependency>
+        <dependency>
+            <groupId>me.lubin</groupId>
+            <artifactId>mysql-spring-boot-starter</artifactId>
+            <version>${version}</version>
+        </dependency>
+        <dependency>
+            <groupId>me.lubin</groupId>
+            <artifactId>generator-spring-boot-starter</artifactId>
+            <version>${version}</version>
+        </dependency>
+        <dependency>
+            <groupId>me.lubin</groupId>
+            <artifactId>mybatis-plus-spring-boot-starter</artifactId>
+            <version>${version}</version>
         </dependency>
     </dependencies>
 

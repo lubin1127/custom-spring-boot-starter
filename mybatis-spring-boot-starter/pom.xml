@@ -10,7 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>mybatis-spring-boot-starter</artifactId>
-    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -40,23 +39,13 @@
     </dependencies>
 
     <build>
-        <finalName>mybatis-spring-boot-starter</finalName>
-        <pluginManagement>
-            <plugins>
-                <!-- compiler插件, 设定JDK版本 -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>2.3.2</version>
-                    <configuration>
-                        <source>${java.version}</source>
-                        <target>${java.version}</target>
-                        <showWarnings>true</showWarnings>
-                        <encoding>utf-8</encoding>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${build.spring.boot.version}</version>
+            </plugin>
+        </plugins>
     </build>
 
 </project>

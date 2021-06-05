@@ -15,13 +15,20 @@
         <module>mysql-spring-boot-starter</module>
         <module>mybatis-spring-boot-starter</module>
         <module>mongo-spring-boot-starter</module>
+        <module>mybatis-plus-spring-boot-starter</module>
+        <module>web-template</module>
     </modules>
-
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <build.spring.boot.version>2.1.6.RELEASE</build.spring.boot.version>
+        <spring.boot.version>2.1.6.RELEASE</spring.boot.version>
+        <mybatis.plus.version>3.4.1</mybatis.plus.version>
+        <fastjson.version>1.2.68</fastjson.version>
+        <druid.version>1.2.6</druid.version>
     </properties>
 
     <dependencyManagement>
@@ -29,9 +36,24 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring-boot.version}</version>
+                <version>${spring.boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatis.plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

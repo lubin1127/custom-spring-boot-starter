@@ -16,10 +16,10 @@ import java.util.Set;
 @Configuration
 public class DefaultDispatcherConfig {
 
-    @Bean
-    public ErrorAttributes errorAttributes() {
-        return new MyDefaultErrorAttributes();
-    }
+    //@Bean
+    //public ErrorAttributes errorAttributes() {
+    //    return new MyDefaultErrorAttributes();
+    //}
 
     @Bean
     public MyDefaultHandlerExceptionResolver myDefaultHandlerExceptionResolver() {
